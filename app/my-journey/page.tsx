@@ -8,6 +8,9 @@ import {currentUser} from "@clerk/nextjs/server";
 import {redirect} from "next/navigation";
 import {getUserCompanions, getUserSessions} from "@/lib/actions/companion.actions";
 import Image from "next/image";
+import CompanionsList from "@/components/ComponentsList";
+
+export const dynamic = "force-dynamic";
 
 
 const Profile = async () => {
