@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
@@ -16,7 +18,7 @@ const NavItems = () => {
                 <Link
                     href={href}
                     key={label}
-                    className={cn(pathname === href)}
+                    className={cn(pathname === href && 'text-primary font-semibold')}
                 >
                     {label}
                 </Link>
